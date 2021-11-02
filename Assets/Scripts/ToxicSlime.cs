@@ -5,7 +5,12 @@ using UnityEngine;
 public class ToxicSlime : MonoBehaviour
 {
     public GameObject explosionEffect;
-    
+    private Vector3 storedposition;
+
+    void Awake()
+    {
+        //storedposition = transform.position;
+    }
     void OnTriggerEnter(Collider other)
     {
         Vector3 particleSpawnPoint = other.transform.position;
@@ -21,6 +26,9 @@ public class ToxicSlime : MonoBehaviour
     // Update is called once per frame
     void Update()  
     {
-        
+        //Vector3 local = transform.position;
+        //local.x += 1f * Time.deltaTime;
+        //transform.position = local;
+        //if()
     }
 }

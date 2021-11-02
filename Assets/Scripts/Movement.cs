@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
         Vector3 newPosition = transform.position;
         newPosition = newPosition + movement;
 
-        transform.position = newPosition;
+        //transform.position = newPosition;
         controller.Move(movement);
     }
 }
